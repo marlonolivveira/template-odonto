@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoClean - Sorrisos que transformam vidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#inicio" class="logo">OdontoClean</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#depoimentos">Feedbacks</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn btn-primary">Agende sua consulta</a>
+            <button class="hamburger">&#9776;</button>
+            <button id="theme-toggle-button" class="theme-toggle-button">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Sorrisos que transformam vidas.</h1>
+                    <p class="hero-subtitle">Tecnologia e cuidado para o sorriso que você sempre sonhou.</p>
+                    <a href="#contato" class="btn btn-secondary">Agendar Agora</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="servicos" class="services-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-carousel-wrapper">
+                    <button id="prev-service" class="carousel-button prev">&lt;</button>
+                    <div class="services-carousel">
+                        <div class="services-grid">
+                            <!-- Card 1 -->
+                            <div class="service-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="service-icon">
+                                            <img width="110" height="110" src="assets/clareamento-dental.png"  alt="Imagem de clareamento dental"/>
+                                        </div>
+                                        <h3>Clareamento Dental</h3>
+                                    </div>
+                                    <div class="card-back">
+                                        <p>Tenha um sorriso mais branco e radiante com nossas técnicas avançadas de clareamento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="service-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="service-icon">
+                                            <img width="110" height="110" src="assets/implante-dentario.png"  alt="Imagem de uma implante dentario"/>
+                                        </div>
+                                        <h3>Implantes</h3>
+                                    </div>
+                                    <div class="card-back">
+                                        <p>Recupere a função e a estética do seu sorriso com implantes de alta qualidade.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="service-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="service-icon">
+                                            <img width="110" height="110" src="assets/aparelho-ortodontico.png" alt="Imagem de aparelho ortodontico" />
+                                        </div>
+                                        <h3>Ortodontia</h3>
+                                    </div>
+                                    <div class="card-back">
+                                        <p>Alinhe seu sorriso com aparelhos modernos e discretos. Opções para todas as idades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="service-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="service-icon">
+                                            <img width="110" height="110" src="assets/restauracao.png"  alt="Imagem de uma restauração dental"/>
+                                        </div>
+                                        <h3>Restauração</h3>
+                                    </div>
+                                    <div class="card-back">
+                                        <p>Alinhe seu sorriso com aparelhos modernos e discretos. Opções para todas as idades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="service-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="service-icon">
+                                            <img width="110" height="110" src="assets/limpeza-dentaria.png" alt="Imagem de uma limpeza dental"/>
+                                        </div>
+                                        <h3>Limpeza Dental</h3>
+                                    </div>
+                                    <div class="card-back">
+                                        <p>Alinhe seu sorriso com aparelhos modernos e discretos. Opções para todas as idades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-service" class="carousel-button next">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section fade-in">
+            <div class="container">
+                <div class="about-image">
+                    <img src="assets/imagem-equipe.png" alt="Equipe da clínica">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="mb">Nossa clínica combina tecnologia de ponta com um atendimento humanizado. Acreditamos que cada paciente é único e merece um tratamento personalizado para alcançar o bem-estar e a saúde bucal.</p>
+                    <a href="#" class="btn btn-outline">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="testimonials-section fade-in">
+            <div class="container">
+                <h2 class="section-title">O que nossos pacientes dizem</h2>
+                <div class="testimonial-carousel-wrapper">
+                    <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <img src="assets/mulher.png" alt="Paciente 1" class="testimonial-avatar">
+                        <p class="testimonial-text">"Atendimento incrível e resultado fantástico! Recomendo a todos que buscam um sorriso perfeito."</p>
+                        <h4 class="testimonial-name">Maria S.</h4>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <img src="assets/homem.png" alt="Paciente 2" class="testimonial-avatar">
+                        <p class="testimonial-text">"A equipe é muito atenciosa e profissional. Me senti seguro durante todo o tratamento."</p>
+                        <h4 class="testimonial-name">João P.</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="assets/homem.png" alt="Paciente 3" class="testimonial-avatar">
+                        <p class="testimonial-text">"A equipe é muito atenciosa e profissional. Me senti seguro durante todo o tratamento."</p>
+                        <h4 class="testimonial-name">Marlon Oliveira</h4>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formsubmit.co/marlonolivveiraf@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Novo contato do site Lumine Odontologia!">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_replyto" value="email">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_origin" value="Lumine Odontologia">
+
+                            <input type="text" name="Nome" placeholder="Nome" required>
+                            <input type="email" name="Email" placeholder="E-mail" >
+                            <input type="tel" name="Celular" placeholder="Celular" required>
+                            <textarea name="Mensagem" placeholder="Sua mensagem" required></textarea>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <p><strong>Endereço:</strong> Rua Fictícia, 123, Cidade-Estado</p>
+                        <p><strong>WhatsApp:</strong> (11) 99999-8888</p>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                        </div>
+                        <div class="map-container">
+                           <p>Carregando mapa...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 OdontoClean. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <a href="https://wa.me/5511999998888" class="whatsapp-button" target="_blank">
+        <!-- <i class="fab fa-whatsapp"></i> -->
+    </a>
+</body>
+</html>
