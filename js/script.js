@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-menu a[href^="#"], .logo[href^="#"], .btn[href^="#"]');
 
+    // Fechar menu ao clicar em qualquer link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             // Close mobile menu on link click
