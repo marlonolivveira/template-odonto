@@ -124,7 +124,7 @@ body.dark-mode .theme-toggle-button .sun-icon {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-color);
+    /* color: var(--branco); */
     font-weight: 600;
     transition: color 0.3s ease;
 }
@@ -235,6 +235,16 @@ section {
 .services-carousel {
     overflow: hidden;
 }
+
+.services-carousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.services-carousel::-webkit-scrollbar {
+    display: none;
+}
+
 
 .services-grid {
     display: flex;
@@ -386,6 +396,28 @@ section {
     color: #555;
 }
 
+.testimonial-rating {
+    margin: 10px 0;
+    color: #FFD700; /* amarelo ouro */
+    font-size: 1.3rem;
+    /* display: flex; */
+    gap: 4px;
+}
+
+.testimonial-rating span {
+    background: linear-gradient(45deg, #FFD700, #FFB300);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.testimonial-rating span {
+    transition: transform 0.2s ease;
+}
+
+.testimonial-rating span:hover {
+    transform: scale(1.2);
+}
+
 .testimonial-name {
     font-weight: 600;
     color: var(--primary-color);
@@ -474,14 +506,44 @@ section {
 }
 
 /* --- Mobile Menu --- */
+/* Botão */
 .hamburger {
-    display: block;
-    font-size: 2rem;
+    width: 35px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: none;
     border: none;
-    color: var(--primary-color);
     cursor: pointer;
     z-index: 1001;
+}
+
+/* As barrinhas */
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+/* Quando ativo vira X */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Cor quando ativo */
+.hamburger.active span {
+    background: #ff4444; /* Ajuste como quiser */
 }
 
 .nav-menu {
@@ -510,7 +572,7 @@ section {
 }
 
 .nav-menu a {
-    color: var(--white-color);
+    color: var(--highlight-color);
     font-size: 1.5rem;
 }
 
@@ -549,7 +611,6 @@ section {
         color: var(--text-color);
     }
     
-    .header .btn-primary { display: block; }
 
     .hero-section .container {
         display: flex;
@@ -629,6 +690,12 @@ section {
     .carousel-button.next {
         right: -3rem;
     }
+
+    .btn-secondary{
+        display: none;
+    }
+
+    .header .btn-primary { display: block; }
 }
 
 /* --- Animations --- */

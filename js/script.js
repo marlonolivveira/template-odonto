@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
     });
 
     // Smooth scrolling for navigation links
@@ -36,6 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+    });
+
+    // Swipe no carrossel de serviços (mobile)
+    const swipeArea = document.querySelector('.services-grid');
+    let startX = 0;
+    let scrollStart = 0;
+    let isSwiping = false;
+
+    swipeArea.addEventListener('touchstart', (e) => {
+        isSwiping = true;
+        startX = e.touches[0].clientX;
+        scrollStart = swipeArea.scrollLeft;
+    });
+
+    swipeArea.addEventListener('touchmove', (e) => {
+        if (!isSwiping) return;
+        const x = e.touches[0].clientX;
+        const walk = (x - startX) * 1.5;
+        swipeArea.scrollLeft = scrollStart - walk;
+    });
+
+    swipeArea.addEventListener('touchend', () => {
+        isSwiping = false;
     });
 
     // Intersection Observer for fade-in animations on scroll
