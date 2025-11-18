@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 height="100%"
                 style="border:0;"
                 allowfullscreen=""
-                loading="lazy">
-                title="Mapa de localização da clínica dentária"
+                loading="lazy"
+                title="Mapa de localização da clínica dentária">
             </iframe>
         `;
     }, 3000); // 3-second delay
