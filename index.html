@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica odontológica de excelência. Tratamentos modernos com atendimento humanizado. Agende sua avaliação gratuita!">
+    <title>OdontoClean — Sorrisos que Transformam Vidas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+
+    <!-- ─── HEADER ─── -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <svg class="logo-icon" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg" width="34" height="34">
+                    <path d="M8 12C8 7.6 11.6 3 18 3C24.4 3 28 7.6 28 12C28 15.5 26.8 18.4 25 21H11C9.2 18.4 8 15.5 8 12Z" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                    <path d="M11 21L9.5 31C9 33 10.5 35 12.5 35C14 35 15 33.5 14.5 31L15 21" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 21L21 21L21.5 31C21 33.5 22 35 23.5 35C25.5 35 27 33 26.5 31Z" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 5V15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+                    <circle cx="28" cy="6" r="4" fill="#0DC8A8"/>
+                    <path d="M28 4V8M26 6H30" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                <span>OdontoClean</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn btn-header" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Agendar Consulta
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- ─── HERO ─── -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+            <div class="particles" id="particles"></div>
+
+            <div class="container">
+                <div class="hero-text">
+                    <div class="hero-badge reveal-up">
+                        <i class="fas fa-star"></i> Clínica de Excelência
+                    </div>
+                    <h1 class="hero-title reveal-up">
+                        Seu Sorriso<br>
+                        <em>Perfeito</em><br>
+                        Começa Aqui.
+                    </h1>
+                    <p class="hero-subtitle reveal-up">
+                        Tecnologia de ponta, atendimento humanizado e resultados que transformam vidas. Descubra o cuidado que você merece.
+                    </p>
+                    <div class="hero-ctas reveal-up">
+                        <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20gratuita." class="btn btn-hero-primary" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Agendar Agora
+                        </a>
+                        <a href="#servicos" class="btn btn-hero-ghost">
+                            Ver Serviços <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats reveal-up">
+                        <div class="hstat">
+                            <i class="fas fa-users hstat-icon"></i>
+                            <strong><span class="count" data-target="500">500</span><span class="hstat-suffix">+</span></strong>
+                            <span>Pacientes Felizes</span>
+                        </div>
+                        <div class="hstat-divider"></div>
+                        <div class="hstat">
+                            <i class="fas fa-clock hstat-icon"></i>
+                            <strong><span class="count" data-target="10">10</span><span class="hstat-suffix">+</span></strong>
+                            <span>Anos de Exp.</span>
+                        </div>
+                        <div class="hstat-divider"></div>
+                        <div class="hstat">
+                            <i class="fas fa-star hstat-icon"></i>
+                            <strong><span class="count" data-target="98">98</span><span class="hstat-suffix">%</span></strong>
+                            <span>Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-right">
+                    <div class="hero-card-wrap">
+                        <div class="hero-card">
+                            <div class="hero-card-art">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-tooth-svg">
+                                    <circle cx="100" cy="100" r="100" fill="url(#hero-bg)"/>
+                                    <defs>
+                                        <radialGradient id="hero-bg" cx="35%" cy="30%">
+                                            <stop offset="0%" stop-color="#0DC8A8" stop-opacity="0.25"/>
+                                            <stop offset="100%" stop-color="#0D1B3E" stop-opacity="0.8"/>
+                                        </radialGradient>
+                                    </defs>
+                                    <path d="M100 42C80 42 64 54 60 70c-3 12 0 24 4 34 2 5 3 10 3 16v28c0 4 3 8 7 8h4c4 0 6-2 8-5l3-6c1-2 2-3 4-3h14c2 0 3 1 4 3l3 6c2 3 4 5 8 5h4c4 0 7-4 7-8V120c0-6 1-11 3-16 4-10 7-22 4-34-4-16-20-28-40-28z" fill="white" opacity="0.9"/>
+                                    <ellipse cx="82" cy="72" rx="6" ry="8" fill="#0DC8A8" opacity="0.6"/>
+                                    <ellipse cx="118" cy="72" rx="6" ry="8" fill="#0DC8A8" opacity="0.6"/>
+                                </svg>
+                                <div class="hero-card-rings">
+                                    <div class="ring ring-1"></div>
+                                    <div class="ring ring-2"></div>
+                                    <div class="ring ring-3"></div>
+                                </div>
+                                <div class="hero-card-dots">
+                                    <span></span><span></span><span></span>
+                                    <span></span><span></span><span></span>
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-badge float-badge-top">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>100% Seguro</strong>
+                                <span>Biossegurança Total</span>
+                            </div>
+                        </div>
+                        <div class="float-badge float-badge-bottom">
+                            <div class="mini-stars">★★★★★</div>
+                            <span>5.0 — Google Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#servicos" class="scroll-cue" aria-label="Rolar para baixo">
+                <div class="scroll-cue-dot"></div>
+            </a>
+        </section>
+
+
+        <!-- ─── SERVICES ─── -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <header class="section-header reveal-up">
+                    <span class="section-tag">Nossos Tratamentos</span>
+                    <h2 class="section-title">O que oferecemos</h2>
+                    <p class="section-desc">Cuidados completos para sua saúde bucal com profissionais especializados e tecnologia de ponta.</p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="svc-card reveal-up" data-delay="0">
+                        <div class="svc-card-inner js-tilt">
+                            <div class="svc-icon"><img src="assets/clareamento-dental.png" alt="" width="64" height="64"></div>
+                            <h3>Clareamento Dental</h3>
+                            <p>Sorriso mais branco e radiante com técnicas avançadas de clareamento a laser e moldeiras personalizadas.</p>
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20no%20Clareamento%20Dental.%20Poderia%20me%20dar%20mais%20informações%3F" class="svc-link" target="_blank" rel="noopener">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal-up" data-delay="100">
+                        <div class="svc-card-inner js-tilt">
+                            <div class="svc-icon"><img src="assets/implante-dentario.png" alt="" width="64" height="64"></div>
+                            <h3>Implantes Dentários</h3>
+                            <p>Recupere a função e estética do sorriso com implantes de titânio de alta qualidade e durabilidade.</p>
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20em%20Implantes%20Dentários.%20Poderia%20me%20dar%20mais%20informações%3F" class="svc-link" target="_blank" rel="noopener">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal-up" data-delay="200">
+                        <div class="svc-card-inner js-tilt">
+                            <div class="svc-icon"><img src="assets/aparelho-ortodontico.png" alt="" width="64" height="64"></div>
+                            <h3>Ortodontia</h3>
+                            <p>Alinhe seu sorriso com aparelhos modernos e discretos. Opções invisíveis e metálicas para todas as idades.</p>
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20em%20Ortodontia.%20Poderia%20me%20dar%20mais%20informações%3F" class="svc-link" target="_blank" rel="noopener">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal-up" data-delay="50">
+                        <div class="svc-card-inner js-tilt">
+                            <div class="svc-icon"><img src="assets/restauracao.png" alt="" width="64" height="64"></div>
+                            <h3>Restauração Dental</h3>
+                            <p>Reabilitação funcional e estética para dentes afetados por cáries ou traumas, com materiais de alta qualidade.</p>
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20em%20Restauração%20Dental.%20Poderia%20me%20dar%20mais%20informações%3F" class="svc-link" target="_blank" rel="noopener">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal-up" data-delay="150">
+                        <div class="svc-card-inner js-tilt">
+                            <div class="svc-icon"><img src="assets/limpeza-dentaria.png" alt="" width="64" height="64"></div>
+                            <h3>Limpeza Dental</h3>
+                            <p>Profilaxia profissional que remove tártaro, placa e manchas, prevenindo doenças e renovando seu sorriso.</p>
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20em%20Limpeza%20Dental.%20Poderia%20me%20dar%20mais%20informações%3F" class="svc-link" target="_blank" rel="noopener">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── ABOUT ─── -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-img-col reveal-left">
+                    <div class="about-img-wrap">
+                        <img src="assets/imagem-equipe.png" alt="Equipe da clínica">
+                        <div class="about-award">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <strong>Excelência</strong>
+                                <span>em Odontologia</span>
+                            </div>
+                        </div>
+                        <div class="about-img-deco"></div>
+                    </div>
+                </div>
+
+                <div class="about-content-col reveal-right">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2 class="section-title left">Cuidado que vai além do sorriso</h2>
+                    <p class="about-lead">Nossa clínica combina tecnologia de ponta com um atendimento verdadeiramente humanizado. Cada paciente é tratado de forma única, porque acreditamos que um sorriso bonito começa com confiança e dedicação.</p>
+
+                    <ul class="about-features">
+                        <li>
+                            <div class="feat-icon"><i class="fas fa-microscope"></i></div>
+                            <div>
+                                <strong>Tecnologia Avançada</strong>
+                                <p>Equipamentos modernos para diagnóstico preciso e tratamentos eficazes com mínimo desconforto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feat-icon"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <strong>Atendimento Humanizado</strong>
+                                <p>Equipe treinada para oferecer conforto, segurança e atenção em cada etapa da sua consulta.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feat-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <strong>Biossegurança Total</strong>
+                                <p>Rigorosos protocolos de esterilização e higiene para total proteção dos nossos pacientes.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20gratuita." class="btn btn-primary" target="_blank" rel="noopener">
+                        Agendar Avaliação Gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── WHY US ─── -->
+        <section class="why-us">
+            <div class="container">
+                <header class="section-header reveal-up">
+                    <span class="section-tag light">Por que nos escolher?</span>
+                    <h2 class="section-title light">Diferenciais que fazem<br>toda a diferença</h2>
+                </header>
+                <div class="why-grid">
+                    <div class="why-card reveal-up" data-delay="0">
+                        <div class="why-number">01</div>
+                        <div class="why-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Horários Flexíveis</h3>
+                        <p>Seg–Sáb, com turnos matutinos, vespertinos e noturnos que encaixam na sua rotina.</p>
+                    </div>
+                    <div class="why-card reveal-up" data-delay="120">
+                        <div class="why-number">02</div>
+                        <div class="why-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Parcelamento Fácil</h3>
+                        <p>Parcele seu tratamento em até 12x sem juros e com condições especiais para fidelidade.</p>
+                    </div>
+                    <div class="why-card reveal-up" data-delay="240">
+                        <div class="why-number">03</div>
+                        <div class="why-icon"><i class="fas fa-user-md"></i></div>
+                        <h3>Especialistas</h3>
+                        <p>Equipe com especialistas em implantes, ortodontia, estética e clínica geral.</p>
+                    </div>
+                    <div class="why-card reveal-up" data-delay="360">
+                        <div class="why-number">04</div>
+                        <div class="why-icon"><i class="fas fa-medal"></i></div>
+                        <h3>Resultado Garantido</h3>
+                        <p>Comprometidos com sua satisfação em cada etapa — do diagnóstico ao acompanhamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── TESTIMONIALS ─── -->
+        <section id="depoimentos" class="testimonials">
+            <div class="container">
+                <header class="section-header reveal-up">
+                    <span class="section-tag">Depoimentos</span>
+                    <h2 class="section-title">O que nossos pacientes dizem</h2>
+                </header>
+
+                <div class="testi-viewport">
+                    <div class="testi-track" id="testi-track">
+                        <div class="testi-card">
+                            <div class="testi-quote">"</div>
+                            <p>Atendimento incrível e resultado fantástico! Fiz meu clareamento aqui e a diferença foi absurda. Recomendo a todos que buscam um sorriso perfeito.</p>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-author">
+                                <img src="assets/mulher.png" alt="Maria S.">
+                                <div>
+                                    <strong>Maria S.</strong>
+                                    <span>Clareamento Dental</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-card">
+                            <div class="testi-quote">"</div>
+                            <p>Fiz meu implante com muito medo, mas a equipe me deixou super tranquilo. Profissionais excelentes, ambiente confortável. Me senti seguro em todo o tratamento.</p>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-author">
+                                <img src="assets/homem.png" alt="João P.">
+                                <div>
+                                    <strong>João P.</strong>
+                                    <span>Implante Dentário</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-card">
+                            <div class="testi-quote">"</div>
+                            <p>Melhor clínica que já fui! O aparelho invisível mudou minha vida. Em menos de um ano meu sorriso se transformou completamente. Muito obrigada!</p>
+                            <div class="testi-stars">★★★★★</div>
+                            <div class="testi-author">
+                                <img src="assets/patient1.png" alt="Ana R.">
+                                <div>
+                                    <strong>Ana R.</strong>
+                                    <span>Ortodontia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-controls">
+                    <button class="testi-btn" id="testi-prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testi-dots" id="testi-dots">
+                        <button class="tdot active" data-idx="0" aria-label="Depoimento 1"></button>
+                        <button class="tdot" data-idx="1" aria-label="Depoimento 2"></button>
+                        <button class="tdot" data-idx="2" aria-label="Depoimento 3"></button>
+                    </div>
+                    <button class="testi-btn" id="testi-next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── CTA BANNER ─── -->
+        <section class="cta-banner">
+            <div class="cta-bg">
+                <div class="cta-orb cta-orb-1"></div>
+                <div class="cta-orb cta-orb-2"></div>
+            </div>
+            <div class="container">
+                <div class="cta-content reveal-up">
+                    <h2>Pronto para transformar seu sorriso?</h2>
+                    <p>Agende sua avaliação gratuita e dê o primeiro passo rumo ao sorriso que você sempre quis.</p>
+                    <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20gratuita." class="btn btn-cta-white" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ─── CONTACT ─── -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <header class="section-header reveal-up">
+                    <span class="section-tag">Contato</span>
+                    <h2 class="section-title">Vamos conversar?</h2>
+                    <p class="section-desc">Preencha o formulário ou fale conosco pelo WhatsApp. Respondemos rapidamente!</p>
+                </header>
+
+                <div class="contact-grid">
+                    <div class="contact-form-wrap reveal-left">
+                        <form id="contact-form" action="https://formsubmit.co/marlonolivveiraf@gmail.com" method="POST" novalidate>
+                            <input type="hidden" name="_subject" value="Novo contato pelo site!">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_replyto" value="email">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f-nome">Nome</label>
+                                    <input type="text" id="f-nome" name="Nome" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="f-tel">Celular</label>
+                                    <input type="tel" id="f-tel" name="Celular" placeholder="(11) 99999-9999" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-email">E-mail</label>
+                                <input type="email" id="f-email" name="Email" placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="f-msg">Mensagem</label>
+                                <textarea id="f-msg" name="Mensagem" rows="4" placeholder="Como podemos ajudá-lo?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                            </button>
+                        </form>
+                        <p class="form-status" id="form-status"></p>
+                    </div>
+
+                    <div class="contact-info-col reveal-right">
+                        <div class="contact-info-card">
+                            <div class="cinfo-item">
+                                <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <strong>Endereço</strong>
+                                    <p>Rua Fictícia, 123 — Cidade, Estado</p>
+                                </div>
+                            </div>
+                            <div class="cinfo-item">
+                                <div class="cinfo-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <p>(00) 00000-0000</p>
+                                </div>
+                            </div>
+                            <div class="cinfo-item">
+                                <div class="cinfo-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <strong>Horários</strong>
+                                    <p>Seg – Sex: 8h às 19h<br>Sábado: 8h às 13h</p>
+                                </div>
+                            </div>
+                            <div class="cinfo-socials">
+                                <a href="#" class="csocial" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="csocial" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://wa.me/SEUNUMERO" class="csocial" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <div class="map-container" id="map-container">
+                            <div class="map-placeholder">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Carregando mapa…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo footer-logo">
+                        <svg viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                            <path d="M8 12C8 7.6 11.6 3 18 3C24.4 3 28 7.6 28 12C28 15.5 26.8 18.4 25 21H11C9.2 18.4 8 15.5 8 12Z" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M11 21L9.5 31C9 33 10.5 35 12.5 35C14 35 15 33.5 14.5 31L15 21" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 21L21 21L21.5 31C21 33.5 22 35 23.5 35C25.5 35 27 33 26.5 31Z" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 5V15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+                            <circle cx="28" cy="6" r="4" fill="#0DC8A8"/>
+                            <path d="M28 4V8M26 6H30" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        </svg>
+                        <span>OdontoClean</span>
+                    </a>
+                    <p>Sorrisos que transformam vidas com tecnologia, cuidado e dedicação de verdade.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/SEUNUMERO" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Links do rodapé">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Serviços">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Clareamento Dental</a></li>
+                        <li><a href="#servicos">Implantes</a></li>
+                        <li><a href="#servicos">Ortodontia</a></li>
+                        <li><a href="#servicos">Restauração</a></li>
+                        <li><a href="#servicos">Limpeza Dental</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Fictícia, 123, Cidade</p>
+                    <p><i class="fab fa-whatsapp"></i> (00) 00000-0000</p>
+                    <p><i class="fas fa-clock"></i> Seg–Sex: 8h–19h / Sáb: 8h–13h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 OdontoClean. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
