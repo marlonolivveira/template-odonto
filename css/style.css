@@ -1038,59 +1038,86 @@ section { padding: var(--sec-pad) 0; }
     gap: 48px;
 }
 
-/* Form */
-.contact-form-wrap form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.form-group label {
-    font-size: .83rem;
-    font-weight: 600;
-    color: var(--clr-text);
-    letter-spacing: .02em;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 14px 16px;
-    border: 1.5px solid var(--clr-border);
-    border-radius: var(--r-sm);
+/* WhatsApp contact card */
+.wa-card {
     background: var(--clr-bg);
-    color: var(--clr-text);
-    font-family: var(--font-body);
-    font-size: .95rem;
-    transition: border-color var(--t-fast), box-shadow var(--t-fast);
-    resize: vertical;
-}
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--clr-accent);
-    box-shadow: 0 0 0 3px var(--clr-accent-dim);
-}
-.form-group textarea { min-height: 120px; }
-
-.form-status {
-    font-size: .9rem;
-    font-weight: 500;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--r-xl);
+    padding: 48px 40px;
     text-align: center;
-    padding-top: 8px;
-    min-height: 1.4em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
+.wa-card-icon {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.2rem;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(37,211,102,.35);
+    animation: wa-pulse 2.8s ease-in-out infinite;
+}
+
+.wa-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    line-height: 1.2;
+}
+
+.wa-card > p {
+    font-size: .95rem;
+    color: var(--clr-text-muted);
+    line-height: 1.7;
+    max-width: 340px;
+}
+
+.btn-wa-main {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #fff;
+    font-size: 1rem;
+    padding: 16px 36px;
+    border-radius: var(--r-full);
+    box-shadow: 0 6px 28px rgba(37,211,102,.35);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all var(--t-base);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.btn-wa-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(37,211,102,.5);
+}
+
+.wa-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.wa-highlights li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: .88rem;
+    color: var(--clr-text-muted);
+}
+.wa-highlights li i { color: #25D366; font-size: .85rem; }
 
 /* Contact info */
 .contact-info-card {

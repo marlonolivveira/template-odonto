@@ -191,47 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
 
-    /* ─── FORM SUBMISSION ─── */
-    const form       = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-
-    if (form) {
-        form.addEventListener('submit', async e => {
-            e.preventDefault();
-
-            const btn = form.querySelector('button[type="submit"]');
-            const original = btn.innerHTML;
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando…';
-            formStatus.style.color = 'var(--clr-text-muted)';
-            formStatus.textContent = '';
-
-            try {
-                const res = await fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { Accept: 'application/json' }
-                });
-
-                if (res.ok) {
-                    formStatus.textContent = '✓ Mensagem enviada com sucesso! Entraremos em contato em breve.';
-                    formStatus.style.color = '#16a34a';
-                    form.reset();
-                } else {
-                    throw new Error();
-                }
-            } catch {
-                formStatus.textContent = '✕ Erro ao enviar. Tente pelo WhatsApp.';
-                formStatus.style.color = '#dc2626';
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = original;
-                setTimeout(() => { formStatus.textContent = ''; }, 6000);
-            }
-        });
-    }
-
-
     /* ─── MAP LAZY LOAD ─── */
     const mapContainer = document.getElementById('map-container');
 
